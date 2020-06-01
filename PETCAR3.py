@@ -1,4 +1,5 @@
 def klinik () : 
+    jumlah = int(input("Input Jumlah Hewan : "))
     print ("Poliklinik Hewan '8Care' ")
     print ("[1] : Konsultasi Dokter")
     print ("[2] : Vaksinasi")
@@ -18,19 +19,22 @@ def klinik () :
         print("Total harga perawatan lain-lain : Rp.", lain)
 
 def penitipan ():
+    jumlah = int(input("Input Jumlah Hewan : "))
     inap = int(input("Lama menginap dalam hari :"))
-    titip = 50000*inap
+    titip = 50000*inap*jumlah
     print("Biaya inap Rp.50000 per hari untuk satu hewan")
     print ("Total biaya inap : Rp.", titip)
     
 
 def inapkucing ():
+    jumlah = int(input("Input Jumlah Hewan : "))
     inap = int(input("Lama menginap dalam hari :"))
-    titip = 35000*inap
+    titip = 35000*inap*jumlah
     print("Biaya inap Rp.35000 per hari untuk satu hewan")
     print ("Total biaya inap : Rp.", titip)
     
 def kucing () : 
+    jumlah = int(input("Input Jumlah Hewan : "))
     print ("Poliklinik Hewan '8Care' ")
     print ("[1] : Konsultasi Dokter")
     print ("[2] : Vaksinasi")
@@ -52,6 +56,7 @@ def kucing () :
 
 
 def fasilitasA () :
+    jumlah = int(input("Input Jumlah Hewan : "))
     print ("List fasilitas yang tersedia:")
     print ("[1] : Klinik")
     print ("[2] : Grooming")
@@ -69,6 +74,7 @@ def fasilitasA () :
     else :
         print ("Tidak Tersedia")
 def fasilitasK () :
+    jumlah = int(input("Input Jumlah Hewan : "))
     print ("List fasilitas yang tersedia:")
     print ("[1] : Klinik")
     print ("[2] : Grooming")
@@ -100,7 +106,6 @@ print (input("Input Nama Pemilik : "))
 print ("[1] : Anjing")
 print ("[2]: Kucing")
 jenis = int(input("Input Jenis Hewan : "))
-jumlah = int(input("Input Jumlah Hewan : "))
 if jenis == 1:
     fasilitasA ()
     next = input("Tambah fasilitas lainnya? (y/n) : ")
