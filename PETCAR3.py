@@ -113,7 +113,7 @@ elif jenis == 2:
     fasilitasK ()
     next = input("Tambah fasilitas lainnya? (y/n) : ")
     if next == "y":
-        fasilitasA ()
+        fasilitasK ()
     else:
         print("Terima kasih telah berkunjung")
 else:
